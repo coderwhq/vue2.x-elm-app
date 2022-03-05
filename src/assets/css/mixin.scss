@@ -1,0 +1,15 @@
+@mixin bg-image($component, $name){
+  $url: '~@/assets/img/'+ $component + '/' + $name ;
+  background-image: url($url + "@2x.png");
+  @media (min-device-pixel-ratio:3),(-webkit-min-device-pixel-ratio:3){
+    background-image: url($url +"@3x.png");
+  }
+}
+
+@mixin bg-star($component, $name){
+  $url: '~@/assets/img/'+ $component + '/' + $name ;
+  background-image: url($url +"@2x.png");
+  @media (min-device-pixel-ratio:3),(-webkit-min-device-pixel-ratio:3){
+    background-image: url($url +"@3x.png");
+  }
+}
